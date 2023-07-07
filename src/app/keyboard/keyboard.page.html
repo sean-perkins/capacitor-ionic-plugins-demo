@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title> Keyboard </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items; let i = index">
+      <ion-input [label]="'Item ' + i" placeholder="Enter text"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>

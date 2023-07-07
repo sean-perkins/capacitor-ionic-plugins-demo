@@ -3,10 +3,10 @@ import { IonicModule, } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
+  selector: 'app-haptics',
+  templateUrl: 'haptics.page.html',
   standalone: true,
   imports: [IonicModule, RouterLink],
 })
-export class HomePage {
+export class HapticsPage {
 }

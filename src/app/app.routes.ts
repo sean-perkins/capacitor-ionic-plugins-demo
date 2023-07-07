@@ -6,9 +6,16 @@ export const routes: Routes = [
     loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
   },
   {
-    path: 'message/:id',
-    loadComponent: () =>
-      import('./view-message/view-message.page').then((m) => m.ViewMessagePage),
+    path: 'haptics',
+    loadComponent: () => import('./haptics/haptics.page').then((m) => m.HapticsPage),
+  },
+  {
+    path: 'status-bar',
+    loadComponent: () => import('./status-bar/status-bar.page').then((m) => m.StatusBarPage),
+  },
+  {
+    path: 'keyboard',
+    loadComponent: () => import('./keyboard/keyboard.page').then((m) => m.KeyboardPage),
   },
   {
     path: '',
